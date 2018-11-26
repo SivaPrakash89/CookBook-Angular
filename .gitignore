@@ -33,6 +33,8 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+/src/assets/.gitkeep
+/src/app/app.component.css
 
 # System Files
 .DS_Store
