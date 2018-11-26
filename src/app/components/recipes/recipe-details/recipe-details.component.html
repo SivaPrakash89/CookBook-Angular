@@ -1,0 +1,30 @@
+<div *ngIf="recipeDetails">
+  <div class="container">
+    <div class="col-xs-2"><img [src]="recipeDetails.imagePath" alt="" class="img-thumbnail">
+      <div></div>
+      <div class="row"></div>
+      <div class="col-md-4">
+        <table class="table table-sm">
+          <tr>
+            <th>Title:</th>
+            <td>{{recipeDetails.name}}</td>
+            <td>{{recipeDetails.description}}</td>
+          </tr>
+          <tr>
+            <th>Ingredients:</th>
+          </tr>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Quantity</th>
+            </tr>
+          </thead>
+          <tr *ngFor="let ingredients of recipeDetails.ingredient">
+            <td>{{ingredients.name}}</td>
+            <td>{{ingredients.quantity}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

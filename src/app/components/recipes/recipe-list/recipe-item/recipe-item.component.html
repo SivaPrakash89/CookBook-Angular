@@ -1,0 +1,19 @@
+<a *ngIf="recipe" class="list-group-item clearfix margin">
+  <div class=" media">
+    <div class="media-left media-middle">
+      <img [src]="recipe.imagePath" alt="" class="img-thumbnail col-md-8">
+    </div>
+    <div class="col-md-4">
+      <div class="row">
+        <div class="col-md-6"><span>{{recipe.name}}</span></div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <button type="button" class="fas fa-minus-circle" (click)="delete()">Delete</button>
+          <button type="button" class="far fa-edit">Edit</button>
+          <button type="button" class="fas fa-info-circle" (click)="getDetails()">Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</a>

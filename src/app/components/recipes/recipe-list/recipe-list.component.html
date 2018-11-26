@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="col-xs-12 ">
+    <app-recipe-item *ngFor="let recipe of recipeList" [recipe]="recipe" (selectedRecipe)="getSelectedRecipe($event.data)"
+      (deleteRecipe)="deleteSelectedRecipe($event.data)"></app-recipe-item>
+
+
+  </div>
+</div>
